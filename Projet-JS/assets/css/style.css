@@ -1,0 +1,129 @@
+/************************************************/
+/******  MA PREMIERE TENTATIVE ET TESTS  ********/
+/************************************************/
+
+/* .answers{
+    width: 300px;
+    height: 75px;
+    background: rgb(128, 32, 32);
+    color: white;
+}  */
+
+/*je veux que mes box soient au centre*/
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/************************************************/
+/******       REAL WORK STARTS HERE      ********/
+/************************************************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*mon container du quizz*/
+/* on veut display que le bouton start au début*/
+#quizz{
+    display: none;
+    overflow: hidden;
+    width: 600px;
+    height: 420px;
+    background: rgb(238, 217, 26);
+    border-radius: 70px 0px 70px 0px;
+    box-shadow: 1px 5px 10px black;
+    margin: 250px auto;
+    position: relative;
+}
+
+/*mon bouton start*/
+
+#start{
+    width: 200px;
+    height: 350px;
+    background: none;
+    border: 15px solid brown;
+    color: brown;
+    box-shadow: 1px 5px 10px black;
+    margin: 250px auto;
+    cursor: pointer;
+}
+
+/*ma div question*/
+
+#question{
+    background-color: rgb(87, 84, 84);
+    width: 600px;
+    height: 100px;
+    color: white;
+    border-radius: 70px 0px 0px 0px;
+    position: absolute;
+    top: 0;
+}
+
+#start,#question{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: nowrap;
+}
+
+/*les choix de réponses*/
+
+#choices{
+    width: 600px;
+    height: 300px;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 100px 0px 0px;
+    text-align: center;}
+
+.choice{
+    background: rgb(226, 226, 221);
+    width: 250px;
+    height: 100px;
+    padding-top: 40px;
+    cursor: pointer;
+    border-radius: 70px 0px 70px 0px;
+    margin: auto;
+    box-shadow: 1px 5px 10px rgb(39, 39, 39);
+}
+
+
+/*en finir avec le quizz*/
+
+#endquizz{
+    display: none;
+    background: gray;
+    height: 200px;
+    width: 500px;
+    text-align: center;
+    border-radius: 0px 50px 0px 50px;
+    margin: 250px auto;
+    color: honeydew;
+    position: relative;
+}
+
+    #endquizz p{
+    padding: 55px;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+/************************************************/
+/******          NOTE TO SELF            ********/
+/************************************************/
+
+/* NE PEUT PAS METTRE DE DISPLAY FLEX A MA DIV QUIZZ SINON  IL PREND LE DESSUS SUR DISPLAY: NONE !
+/* REVISER CLASSLIST TOGGLE POUR MANIPULER L'AFFICHAGE OU NON DE MES BLOCKS
+/* METTRE DES CLASS A TOUS LES ELEMENTS QUI ON LES MEMES PROPRIETES POUR CLEAN LE CODE
